@@ -1,968 +1,1581 @@
-@prefix : <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix untitled-ontology-2: <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#> .
-@base <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2/> .
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties/"
+     xml:base="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:materialproperties="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties"/>
+    
 
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2> rdf:type owl:Ontology .
-
-#################################################################
-#    Annotation properties
-#################################################################
 
-###  http://www.w3.org/2000/01/rdf-schema#comment
-rdfs:comment rdfs:domain untitled-ontology-2:Temperature .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    
 
-###  http://www.w3.org/2000/01/rdf-schema#label
-rdfs:label rdfs:comment "cm3/10min" .
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
-#################################################################
-#    Object Properties
-#################################################################
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temperature"/>
+    </rdf:Description>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasComponent
-untitled-ontology-2:hasComponent rdf:type owl:ObjectProperty ;
-                                 rdfs:domain untitled-ontology-2:PP ;
-                                 rdfs:range untitled-ontology-2:PP-GF10 ,
-                                            untitled-ontology-2:PP-GF20 ,
-                                            <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-(GF+T)> .
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasProperty
-untitled-ontology-2:hasProperty rdf:type owl:ObjectProperty ;
-                                rdfs:domain untitled-ontology-2:PP-GF10 ,
-                                            untitled-ontology-2:PP-GF20 ,
-                                            <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-(GF+T)> ;
-                                rdfs:range untitled-ontology-2:Comparative_tracking_index ,
-                                           untitled-ontology-2:Electric_strength ,
-                                           untitled-ontology-2:Granul ,
-                                           untitled-ontology-2:Load ,
-                                           untitled-ontology-2:Pellets ,
-                                           untitled-ontology-2:Powder ,
-                                           untitled-ontology-2:Surface_resistivity ,
-                                           untitled-ontology-2:Temperature ,
-                                           untitled-ontology-2:Viscosity_number ,
-                                           untitled-ontology-2:Volume_resistivity ,
-                                           <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dissipation_factor_(100_Hz)> ,
-                                           <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dissipation_factor_(1_MHz)> ,
-                                           <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Molding_shrinkage_(normal)> ,
-                                           <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Molding_shrinkage_(parallel)> ,
-                                           <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Relative_permittivity_(100_Hz)> ,
-                                           <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Relative_permittivity_(1_MHz)> .
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:comment>cm3/10min</rdfs:comment>
+    </rdf:Description>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasType
-untitled-ontology-2:hasType rdf:type owl:ObjectProperty ;
-                            rdfs:domain untitled-ontology-2:Material_Properties ;
-                            rdfs:range untitled-ontology-2:Additives ,
-                                       untitled-ontology-2:Delivery_form ,
-                                       untitled-ontology-2:Electrical_property ,
-                                       untitled-ontology-2:Mechanical_Property ,
-                                       untitled-ontology-2:Mechanical_property_film ,
-                                       untitled-ontology-2:Physical_Property ,
-                                       untitled-ontology-2:Processing ,
-                                       untitled-ontology-2:Rheological_Property ,
-                                       untitled-ontology-2:Special_characteristics ,
-                                       untitled-ontology-2:Thermal_Property .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    
 
-#################################################################
-#    Data properties
-#################################################################
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasComponent
-untitled-ontology-2:hasComponent rdf:type owl:DatatypeProperty .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasComponent -->
 
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF10"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF20"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-(GF+T)"/>
+    </owl:ObjectProperty>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasFlameRetardant
-untitled-ontology-2:hasFlameRetardant rdf:type owl:DatatypeProperty ;
-                                      rdfs:range xsd:decimal .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasProperty -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasGlassFiber
-untitled-ontology-2:hasGlassFiber rdf:type owl:DatatypeProperty ;
-                                  rdfs:range xsd:decimal .
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Polymer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasGradename
-untitled-ontology-2:hasGradename rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain untitled-ontology-2:PP .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasType -->
 
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Delivery_form"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Physical_Property"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:ObjectProperty>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasMeltvolumFlowRate
-untitled-ontology-2:hasMeltvolumFlowRate rdf:type owl:DatatypeProperty .
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasName
-untitled-ontology-2:hasName rdf:type owl:DatatypeProperty ;
-                            rdfs:domain untitled-ontology-2:Polymer ;
-                            rdfs:range xsd:string ;
-                            rdfs:comment "" .
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasPropertyName
-untitled-ontology-2:hasPropertyName rdf:type owl:DatatypeProperty ;
-                                    rdfs:comment "" .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasComponent -->
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasComponent"/>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasShortName
-untitled-ontology-2:hasShortName rdf:type owl:DatatypeProperty .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasFlameRetardant -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasTemperature
-untitled-ontology-2:hasTemperature rdf:type owl:DatatypeProperty .
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasFlameRetardant">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasUnit
-untitled-ontology-2:hasUnit rdf:type owl:DatatypeProperty .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasGlassFiber -->
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasGlassFiber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasUnitValue
-untitled-ontology-2:hasUnitValue rdf:type owl:DatatypeProperty .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasGradename -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasValue
-untitled-ontology-2:hasValue rdf:type owl:DatatypeProperty ;
-                             rdfs:domain untitled-ontology-2:Load ,
-                                         untitled-ontology-2:Temperature ,
-                                         untitled-ontology-2:Viscosity_number ,
-                                         <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Molding_shrinkage_(normal)> ,
-                                         <http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Molding_shrinkage_(parallel)> ;
-                             rdfs:range xsd:float ;
-                             rdfs:comment ""^^xsd:float .
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasGradename">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+    </owl:DatatypeProperty>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#hasViscosityNumber
-untitled-ontology-2:hasViscosityNumber rdf:type owl:DatatypeProperty .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasMeltvolumFlowRate -->
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasMeltvolumFlowRate"/>
+    
 
-#################################################################
-#    Classes
-#################################################################
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Abrasion_resistance
-untitled-ontology-2:Abrasion_resistance rdf:type owl:Class ;
-                                        rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasName -->
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Polymer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment></rdfs:comment>
+    </owl:DatatypeProperty>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Additives
-untitled-ontology-2:Additives rdf:type owl:Class ;
-                              rdfs:subClassOf untitled-ontology-2:Material_Properties .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasPropertyName -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Anti-static
-untitled-ontology-2:Anti-static rdf:type owl:Class ;
-                                rdfs:subClassOf untitled-ontology-2:Special_characteristics .
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasPropertyName">
+        <rdfs:comment></rdfs:comment>
+    </owl:DatatypeProperty>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Antiblocking_agent
-untitled-ontology-2:Antiblocking_agent rdf:type owl:Class ;
-                                       rdfs:subClassOf untitled-ontology-2:Additives .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasShortName -->
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasShortName"/>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Blow_Molding
-untitled-ontology-2:Blow_Molding rdf:type owl:Class ;
-                                 rdfs:subClassOf untitled-ontology-2:Processing ;
-                                 rdfs:label [ untitled-ontology-2:hasShortName "InjMold" ;
-                                              untitled-ontology-2:hasUnit ""
-                                            ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasTemperature -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Blowing_agent
-untitled-ontology-2:Blowing_agent rdf:type owl:Class ;
-                                  rdfs:subClassOf untitled-ontology-2:Additives .
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasTemperature"/>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Burning_Behav._at_1.5mm_nom._thickn.
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Burning_Behav._at_1.5mm_nom._thickn.> rdf:type owl:Class ;
-                                                                                                              rdfs:subClassOf untitled-ontology-2:Thermal_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasUnit -->
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasUnit"/>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Burning_Behav._at_thickness_h
-untitled-ontology-2:Burning_Behav._at_thickness_h rdf:type owl:Class ;
-                                                  rdfs:subClassOf untitled-ontology-2:Thermal_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasUnitValue -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Calandering
-untitled-ontology-2:Calandering rdf:type owl:Class ;
-                                rdfs:subClassOf untitled-ontology-2:Processing ;
-                                rdfs:label [ untitled-ontology-2:hasShortName "Calandr"
-                                           ] .
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasUnitValue"/>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Casting
-untitled-ontology-2:Casting rdf:type owl:Class ;
-                            rdfs:subClassOf untitled-ontology-2:Processing ;
-                            rdfs:label [ untitled-ontology-2:hasShortName "Casting"
-                                       ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasValue -->
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Load"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temperature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Viscosity_number"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Molding_shrinkage_(normal)"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Molding_shrinkage_(parallel)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Coating
-untitled-ontology-2:Coating rdf:type owl:Class ;
-                            rdfs:subClassOf untitled-ontology-2:Processing .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasViscosityNumber -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Comparative_tracking_index
-untitled-ontology-2:Comparative_tracking_index rdf:type owl:Class ;
-                                               rdfs:subClassOf untitled-ontology-2:Electrical_property .
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasViscosityNumber"/>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dart_drop_A
-untitled-ontology-2:Dart_drop_A rdf:type owl:Class ;
-                                rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dart_drop_B
-untitled-ontology-2:Dart_drop_B rdf:type owl:Class ;
-                                rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Abrasion_resistance -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Delivery_form
-untitled-ontology-2:Delivery_form rdf:type owl:Class ;
-                                  rdfs:subClassOf untitled-ontology-2:Material_Properties .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Abrasion_resistance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Density
-untitled-ontology-2:Density rdf:type owl:Class ;
-                            rdfs:subClassOf untitled-ontology-2:Physical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dynamic_coefficient_of_friction
-untitled-ontology-2:Dynamic_coefficient_of_friction rdf:type owl:Class ;
-                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Anti-static -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Electric_strength
-untitled-ontology-2:Electric_strength rdf:type owl:Class ;
-                                      rdfs:subClassOf untitled-ontology-2:Electrical_property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Anti-static">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Electrical_property
-untitled-ontology-2:Electrical_property rdf:type owl:Class ;
-                                        rdfs:subClassOf untitled-ontology-2:Material_Properties .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Antiblocking_agent -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Antiblocking_agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Film_Extrusion
-untitled-ontology-2:Film_Extrusion rdf:type owl:Class ;
-                                   rdfs:subClassOf untitled-ontology-2:Processing ;
-                                   rdfs:label [ untitled-ontology-2:hasShortName "Film"
-                                              ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Blow_Molding -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Granul
-untitled-ontology-2:Granul rdf:type owl:Class ;
-                           rdfs:subClassOf untitled-ontology-2:Delivery_form ;
-                           rdfs:label [ untitled-ontology-2:hasShortName "Granul"
-                                      ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Blow_Molding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>InjMold</materialproperties:hasShortName>
+                <materialproperties:hasUnit></materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Heat_stabilized_or_stable_to_heat
-untitled-ontology-2:Heat_stabilized_or_stable_to_heat rdf:type owl:Class ;
-                                                      rdfs:subClassOf untitled-ontology-2:Special_characteristics .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Blowing_agent -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Blowing_agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Humidity_absorption
-untitled-ontology-2:Humidity_absorption rdf:type owl:Class ;
-                                        rdfs:subClassOf untitled-ontology-2:Physical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Burning_Behav._at_1.5mm_nom._thickn. -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Increased_electrical_conductivity
-untitled-ontology-2:Increased_electrical_conductivity rdf:type owl:Class ;
-                                                      rdfs:subClassOf untitled-ontology-2:Special_characteristics .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Burning_Behav._at_1.5mm_nom._thickn.">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Injection_Molding
-untitled-ontology-2:Injection_Molding rdf:type owl:Class ;
-                                      rdfs:subClassOf untitled-ontology-2:Processing ;
-                                      rdfs:label [ untitled-ontology-2:hasShortName "InjMold"
-                                                 ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Burning_Behav._at_thickness_h -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Burning_Behav._at_thickness_h">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Light_stabilized_or_stable_to_light
-untitled-ontology-2:Light_stabilized_or_stable_to_light rdf:type owl:Class ;
-                                                        rdfs:subClassOf untitled-ontology-2:Special_characteristics .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Calandering -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Load
-untitled-ontology-2:Load rdf:type owl:Class ;
-                         rdfs:subClassOf untitled-ontology-2:Rheological_Property ;
-                         rdfs:label [ untitled-ontology-2:hasShortName "m" ;
-                                      untitled-ontology-2:hasUnit "kg"
-                                    ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Calandering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Calandr</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Lubricants
-untitled-ontology-2:Lubricants rdf:type owl:Class ;
-                               rdfs:subClassOf untitled-ontology-2:Additives .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Casting -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Casting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Casting</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Luminous_transmittance
-untitled-ontology-2:Luminous_transmittance rdf:type owl:Class ;
-                                           rdfs:subClassOf untitled-ontology-2:Physical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Coating -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Material_Properties
-untitled-ontology-2:Material_Properties rdf:type owl:Class ;
-                                        rdfs:comment [ untitled-ontology-2:hasShortName ""
-                                                     ] ,
-                                                     [ untitled-ontology-2:hasValue ""
-                                                     ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Coating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Mechanical_Property
-untitled-ontology-2:Mechanical_Property rdf:type owl:Class ;
-                                        rdfs:subClassOf untitled-ontology-2:Material_Properties .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Comparative_tracking_index -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Comparative_tracking_index">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Mechanical_property_film
-untitled-ontology-2:Mechanical_property_film rdf:type owl:Class ;
-                                             rdfs:subClassOf untitled-ontology-2:Material_Properties .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dart_drop_A -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Melt_volume_flow_rate
-untitled-ontology-2:Melt_volume_flow_rate rdf:type owl:Class ;
-                                          rdfs:subClassOf untitled-ontology-2:Rheological_Property ;
-                                          rdfs:label [ untitled-ontology-2:hasShortName "MVR" ;
-                                                       untitled-ontology-2:hasUnit "cm3/10min"
-                                                     ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dart_drop_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Metal_deactivator
-untitled-ontology-2:Metal_deactivator rdf:type owl:Class ;
-                                      rdfs:subClassOf untitled-ontology-2:Additives .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dart_drop_B -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dart_drop_B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Minimum_achievable_thickness
-untitled-ontology-2:Minimum_achievable_thickness rdf:type owl:Class ;
-                                                 rdfs:subClassOf untitled-ontology-2:Test_specimen_production_film ;
-                                                 rdfs:label [ untitled-ontology-2:hasShortName "MinThick"
-                                                            ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Delivery_form -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Nominal_strain_at_break
-untitled-ontology-2:Nominal_strain_at_break rdf:type owl:Class ;
-                                            rdfs:subClassOf untitled-ontology-2:Mechanical_Property ;
-                                            rdfs:label [ untitled-ontology-2:hasShortName "tB" ;
-                                                         untitled-ontology-2:hasUnit "%"
-                                                       ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Delivery_form">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Other_Extrusion
-untitled-ontology-2:Other_Extrusion rdf:type owl:Class ;
-                                    rdfs:subClassOf untitled-ontology-2:Processing ;
-                                    rdfs:label [ untitled-ontology-2:hasShortName "OtherEx"
-                                               ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Density -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Density">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Physical_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Oxygen_index
-untitled-ontology-2:Oxygen_index rdf:type owl:Class ;
-                                 rdfs:subClassOf untitled-ontology-2:Thermal_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dynamic_coefficient_of_friction -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP
-untitled-ontology-2:PP rdf:type owl:Class ;
-                       rdfs:subClassOf untitled-ontology-2:Polymer .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dynamic_coefficient_of_friction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-GF10
-untitled-ontology-2:PP-GF10 rdf:type owl:Class ;
-                            rdfs:subClassOf untitled-ontology-2:PP .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electric_strength -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electric_strength">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-GF20
-untitled-ontology-2:PP-GF20 rdf:type owl:Class ;
-                            rdfs:subClassOf untitled-ontology-2:PP .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Pellets
-untitled-ontology-2:Pellets rdf:type owl:Class ;
-                            rdfs:subClassOf untitled-ontology-2:Delivery_form ;
-                            rdfs:label [ untitled-ontology-2:hasShortName "Pellets"
-                                       ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Physical_Property
-untitled-ontology-2:Physical_Property rdf:type owl:Class ;
-                                      rdfs:subClassOf untitled-ontology-2:Material_Properties .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Film_Extrusion -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Film_Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Film</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Plasticizer
-untitled-ontology-2:Plasticizer rdf:type owl:Class ;
-                                rdfs:subClassOf untitled-ontology-2:Additives .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Granul -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Platable
-untitled-ontology-2:Platable rdf:type owl:Class ;
-                             rdfs:subClassOf untitled-ontology-2:Special_characteristics .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Granul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Delivery_form"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Granul</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Polymer
-untitled-ontology-2:Polymer rdf:type owl:Class ;
-                            rdfs:comment [ untitled-ontology-2:hasFlameRetardant  ;
-                                           untitled-ontology-2:hasGlassFiber  ;
-                                           untitled-ontology-2:hasName ""
-                                         ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Heat_stabilized_or_stable_to_heat -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Heat_stabilized_or_stable_to_heat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Powder
-untitled-ontology-2:Powder rdf:type owl:Class ;
-                           rdfs:subClassOf untitled-ontology-2:Delivery_form ;
-                           rdfs:label [ untitled-ontology-2:hasShortName "Powder"
-                                      ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Humidity_absorption -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Processing
-untitled-ontology-2:Processing rdf:type owl:Class ;
-                               rdfs:subClassOf untitled-ontology-2:Material_Properties .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Humidity_absorption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Physical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Profile_Extrusion
-untitled-ontology-2:Profile_Extrusion rdf:type owl:Class ;
-                                      rdfs:subClassOf untitled-ontology-2:Processing ;
-                                      rdfs:label [ untitled-ontology-2:hasShortName "ProfEx"
-                                                 ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Increased_electrical_conductivity -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Increased_electrical_conductivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Release_agent
-untitled-ontology-2:Release_agent rdf:type owl:Class ;
-                                  rdfs:subClassOf untitled-ontology-2:Additives .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Injection_Molding -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Rheological_Property
-untitled-ontology-2:Rheological_Property rdf:type owl:Class ;
-                                         rdfs:subClassOf untitled-ontology-2:Material_Properties .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Injection_Molding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>InjMold</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Sheet_Extrusion
-untitled-ontology-2:Sheet_Extrusion rdf:type owl:Class ;
-                                    rdfs:subClassOf untitled-ontology-2:Processing ;
-                                    rdfs:label [ untitled-ontology-2:hasShortName "SheetEx"
-                                               ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Light_stabilized_or_stable_to_light -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Light_stabilized_or_stable_to_light">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Special_characteristics
-untitled-ontology-2:Special_characteristics rdf:type owl:Class ;
-                                            rdfs:subClassOf untitled-ontology-2:Material_Properties .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Load -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Strain_at_break
-untitled-ontology-2:Strain_at_break rdf:type owl:Class ;
-                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Load">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>m</materialproperties:hasShortName>
+                <materialproperties:hasUnit>kg</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_100percent_elongation
-untitled-ontology-2:Stress_at_100percent_elongation rdf:type owl:Class ;
-                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Lubricants -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Lubricants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_10percent_elongation
-untitled-ontology-2:Stress_at_10percent_elongation rdf:type owl:Class ;
-                                                   rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Luminous_transmittance -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_300percent_elongation
-untitled-ontology-2:Stress_at_300percent_elongation rdf:type owl:Class ;
-                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Luminous_transmittance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Physical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_50_percent_strain
-untitled-ontology-2:Stress_at_50_percent_strain rdf:type owl:Class ;
-                                                rdfs:subClassOf untitled-ontology-2:Mechanical_Property ;
-                                                rdfs:label [ untitled-ontology-2:hasShortName "δ50" ;
-                                                             untitled-ontology-2:hasUnit "%"
-                                                           ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties">
+        <rdfs:comment>
+            <rdf:Description>
+                <materialproperties:hasShortName></materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:comment>
+        <rdfs:comment>
+            <rdf:Description>
+                <materialproperties:hasValue></materialproperties:hasValue>
+            </rdf:Description>
+        </rdfs:comment>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_break
-untitled-ontology-2:Stress_at_break rdf:type owl:Class ;
-                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property ;
-                                    rdfs:label [ untitled-ontology-2:hasShortName "δB" ;
-                                                 untitled-ontology-2:hasUnit "MPa"
-                                               ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Surface_resistivity
-untitled-ontology-2:Surface_resistivity rdf:type owl:Class ;
-                                        rdfs:subClassOf untitled-ontology-2:Electrical_property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Tear_strength
-untitled-ontology-2:Tear_strength rdf:type owl:Class ;
-                                  rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temperature
-untitled-ontology-2:Temperature rdf:type owl:Class ;
-                                rdfs:subClassOf untitled-ontology-2:Rheological_Property ;
-                                rdfs:label [ untitled-ontology-2:hasShortName "T" ;
-                                             untitled-ontology-2:hasUnit "°C"
-                                           ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Melt_volume_flow_rate -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Tensile_modulus
-untitled-ontology-2:Tensile_modulus rdf:type owl:Class ;
-                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property ;
-                                    rdfs:label [ untitled-ontology-2:hasShortName "Et" ;
-                                                 untitled-ontology-2:hasUnit "MPa"
-                                               ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Melt_volume_flow_rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>MVR</materialproperties:hasShortName>
+                <materialproperties:hasUnit>cm3/10min</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Test_specimen_production_film
-untitled-ontology-2:Test_specimen_production_film rdf:type owl:Class ;
-                                                  rdfs:subClassOf untitled-ontology-2:Material_Properties .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Metal_deactivator -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Metal_deactivator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Thermal_Property
-untitled-ontology-2:Thermal_Property rdf:type owl:Class ;
-                                     rdfs:subClassOf untitled-ontology-2:Material_Properties .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Minimum_achievable_thickness -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Thermoforming
-untitled-ontology-2:Thermoforming rdf:type owl:Class ;
-                                  rdfs:subClassOf untitled-ontology-2:Processing ;
-                                  rdfs:label [ untitled-ontology-2:hasShortName "Thermo"
-                                             ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Minimum_achievable_thickness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Test_specimen_production_film"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>MinThick</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Thickness_of_specimen
-untitled-ontology-2:Thickness_of_specimen rdf:type owl:Class ;
-                                          rdfs:subClassOf untitled-ontology-2:Test_specimen_production_film ;
-                                          rdfs:label [ untitled-ontology-2:hasUnit "mm"
-                                                     ] ,
-                                                     [ untitled-ontology-2:hasShortName "sthick"
-                                                     ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Nominal_strain_at_break -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Nominal_strain_at_break">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>tB</materialproperties:hasShortName>
+                <materialproperties:hasUnit>%</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Thickness_tested
-untitled-ontology-2:Thickness_tested rdf:type owl:Class ;
-                                     rdfs:subClassOf untitled-ontology-2:Thermal_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Other_Extrusion -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Transfer_Molding
-untitled-ontology-2:Transfer_Molding rdf:type owl:Class ;
-                                     rdfs:subClassOf untitled-ontology-2:Processing ;
-                                     rdfs:label [ untitled-ontology-2:hasShortName "XferMol"
-                                                ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Other_Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>OtherEx</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Transparent
-untitled-ontology-2:Transparent rdf:type owl:Class ;
-                                rdfs:subClassOf untitled-ontology-2:Special_characteristics .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Oxygen_index -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Oxygen_index">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Type_of_extrusion
-untitled-ontology-2:Type_of_extrusion rdf:type owl:Class ;
-                                      rdfs:subClassOf untitled-ontology-2:Test_specimen_production_film ;
-                                      rdfs:label [ untitled-ontology-2:hasShortName "ExtTy"
-                                                 ] ,
-                                                 [ untitled-ontology-2:hasUnit "-"
-                                                 ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#U.V._stabilized_or_stable_to_weather
-untitled-ontology-2:U.V._stabilized_or_stable_to_weather rdf:type owl:Class ;
-                                                         rdfs:subClassOf untitled-ontology-2:Special_characteristics .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Polymer"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Viscosity_number
-untitled-ontology-2:Viscosity_number rdf:type owl:Class ;
-                                     rdfs:subClassOf untitled-ontology-2:Rheological_Property ;
-                                     rdfs:label [ untitled-ontology-2:hasShortName "VN" ;
-                                                  untitled-ontology-2:hasUnit "cm³/g"
-                                                ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF10 -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Volume_resistivity
-untitled-ontology-2:Volume_resistivity rdf:type owl:Class ;
-                                       rdfs:subClassOf untitled-ontology-2:Electrical_property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF20 -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Water_absorption
-untitled-ontology-2:Water_absorption rdf:type owl:Class ;
-                                     rdfs:subClassOf untitled-ontology-2:Physical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF20">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Yellow_Card_available
-untitled-ontology-2:Yellow_Card_available rdf:type owl:Class ;
-                                          rdfs:subClassOf untitled-ontology-2:Thermal_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Pellets -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Pellets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Delivery_form"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Pellets</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Yield_strain
-untitled-ontology-2:Yield_strain rdf:type owl:Class ;
-                                 rdfs:subClassOf untitled-ontology-2:Mechanical_Property ;
-                                 rdfs:label [ untitled-ontology-2:hasShortName "εy" ;
-                                              untitled-ontology-2:hasUnit "%"
-                                            ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Physical_Property -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Yield_stress
-untitled-ontology-2:Yield_stress rdf:type owl:Class ;
-                                 rdfs:subClassOf untitled-ontology-2:Mechanical_Property ;
-                                 rdfs:label [ untitled-ontology-2:hasShortName "σy" ;
-                                              untitled-ontology-2:hasUnit "MPa"
-                                            ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Physical_Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_impact_strength_(+23°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_impact_strength_(+23°C)> rdf:type owl:Class ;
-                                                                                                        rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Plasticizer -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Plasticizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_impact_strength_(-30°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_impact_strength_(-30°C)> rdf:type owl:Class ;
-                                                                                                        rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Platable -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_notched_impact_strength_(+23°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_notched_impact_strength_(+23°C)> rdf:type owl:Class ;
-                                                                                                                rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Platable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_notched_impact_strength_(+23°C)_3mm
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_notched_impact_strength_(+23°C)_3mm> rdf:type owl:Class ;
-                                                                                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Polymer -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Polymer">
+        <rdfs:comment>
+            <rdf:Description>
+                <materialproperties:hasFlameRetardant rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></materialproperties:hasFlameRetardant>
+                <materialproperties:hasGlassFiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></materialproperties:hasGlassFiber>
+                <materialproperties:hasName></materialproperties:hasName>
+            </rdf:Description>
+        </rdfs:comment>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_notched_impact_strength_(-30°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_notched_impact_strength_(-30°C)> rdf:type owl:Class ;
-                                                                                                                rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Powder -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_notched_impact_strength_(-30°C)_3mm
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Charpy_notched_impact_strength_(-30°C)_3mm> rdf:type owl:Class ;
-                                                                                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Powder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Delivery_form"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Powder</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(normal)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(normal)> rdf:type owl:Class ;
-                                                                                                                                rdfs:subClassOf untitled-ontology-2:Thermal_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(parallel)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(parallel)> rdf:type owl:Class ;
-                                                                                                                                  rdfs:subClassOf untitled-ontology-2:Thermal_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Profile_Extrusion -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Compression_Set,_100°C,_24h
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Compression_Set,_100°C,_24h> rdf:type owl:Class ;
-                                                                                                     rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Profile_Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>ProfEx</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Compression_Set,_23°C,_24h
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Compression_Set,_23°C,_24h> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Release_agent -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Release_agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Additives"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Compression_Set,_70°C,_24h
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Compression_Set,_70°C,_24h> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dissipation_factor_(100_Hz)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dissipation_factor_(100_Hz)> rdf:type owl:Class ;
-                                                                                                     rdfs:subClassOf untitled-ontology-2:Electrical_property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dissipation_factor_(1_MHz)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Dissipation_factor_(1_MHz)> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf untitled-ontology-2:Electrical_property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Sheet_Extrusion -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Sheet_Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>SheetEx</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Elmendorf_Tear_resistance_(normal)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Elmendorf_Tear_resistance_(normal)> rdf:type owl:Class ;
-                                                                                                            rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Elmendorf_Tear_resistance_(parallel)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Elmendorf_Tear_resistance_(parallel)> rdf:type owl:Class ;
-                                                                                                              rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Glass_transition_temperature_(10°C/min)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Glass_transition_temperature_(10°C/min)> rdf:type owl:Class ;
-                                                                                                                 rdfs:subClassOf untitled-ontology-2:Thermal_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Strain_at_break -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Strain_at_break">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Indicative_density_(PE_only)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Indicative_density_(PE_only)> rdf:type owl:Class ;
-                                                                                                      rdfs:subClassOf untitled-ontology-2:Physical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_100percent_elongation -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_impact_strength_(+23°C)_4mm
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_impact_strength_(+23°C)_4mm> rdf:type owl:Class ;
-                                                                                                          rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_100percent_elongation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_impact_strength_(-30°C)_4mm
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_impact_strength_(-30°C)_4mm> rdf:type owl:Class ;
-                                                                                                          rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_10percent_elongation -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_10percent_elongation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_notched_impact_strength_(+23°C)_3mm
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_notched_impact_strength_(+23°C)_3mm> rdf:type owl:Class ;
-                                                                                                                  rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_300percent_elongation -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_notched_impact_strength_(+23°C)_4mm
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_notched_impact_strength_(+23°C)_4mm> rdf:type owl:Class ;
-                                                                                                                  rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_300percent_elongation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_notched_impact_strength_(+30°C)_3mm
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_notched_impact_strength_(+30°C)_3mm> rdf:type owl:Class ;
-                                                                                                                  rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_50_percent_strain -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_50_percent_strain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>δ50</materialproperties:hasShortName>
+                <materialproperties:hasUnit>%</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_notched_impact_strength_(+30°C)_4mm
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Izod_notched_impact_strength_(+30°C)_4mm> rdf:type owl:Class ;
-                                                                                                                  rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_break -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Maximum_strain_(normal)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Maximum_strain_(normal)> rdf:type owl:Class ;
-                                                                                                 rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_break">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>δB</materialproperties:hasShortName>
+                <materialproperties:hasUnit>MPa</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Maximum_strain_(parallel)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Maximum_strain_(parallel)> rdf:type owl:Class ;
-                                                                                                   rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Surface_resistivity -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Surface_resistivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Maximum_stress_(normal)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Maximum_stress_(normal)> rdf:type owl:Class ;
-                                                                                                 rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tear_strength -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Maximum_stress_(parallel)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Maximum_stress_(parallel)> rdf:type owl:Class ;
-                                                                                                   rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tear_strength">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Melting_temperature_(10°C/min)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Melting_temperature_(10°C/min)> rdf:type owl:Class ;
-                                                                                                        rdfs:subClassOf untitled-ontology-2:Thermal_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temperature -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>T</materialproperties:hasShortName>
+                <materialproperties:hasUnit>°C</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Molding_shrinkage_(normal)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Molding_shrinkage_(normal)> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf untitled-ontology-2:Rheological_Property ;
-                                                                                                    rdfs:label [ untitled-ontology-2:hasShortName "SMn" ;
-                                                                                                                 untitled-ontology-2:hasUnit "%"
-                                                                                                               ] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tensile_modulus -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Molding_shrinkage_(parallel)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Molding_shrinkage_(parallel)> rdf:type owl:Class ;
-                                                                                                      rdfs:subClassOf untitled-ontology-2:Rheological_Property ;
-                                                                                                      rdfs:label [ untitled-ontology-2:hasShortName "Smp" ;
-                                                                                                                   untitled-ontology-2:hasUnit "%"
-                                                                                                                 ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tensile_modulus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Et</materialproperties:hasShortName>
+                <materialproperties:hasUnit>MPa</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-(GF+T)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-(GF+T)> rdf:type owl:Class ;
-                                                                                   rdfs:subClassOf untitled-ontology-2:PP .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Test_specimen_production_film -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Test_specimen_production_film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Puncture_-_maximum_force_(+23°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Puncture_-_maximum_force_(+23°C)> rdf:type owl:Class ;
-                                                                                                          rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Puncture_-_maximum_force_(-30°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Puncture_-_maximum_force_(-30°C)> rdf:type owl:Class ;
-                                                                                                          rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Material_Properties"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Puncture_energy_(+23°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Puncture_energy_(+23°C)> rdf:type owl:Class ;
-                                                                                                 rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermoforming -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermoforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Thermo</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Puncture_energy_(-30°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Puncture_energy_(-30°C)> rdf:type owl:Class ;
-                                                                                                 rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thickness_of_specimen -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Relative_permittivity_(100_Hz)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Relative_permittivity_(100_Hz)> rdf:type owl:Class ;
-                                                                                                        rdfs:subClassOf untitled-ontology-2:Electrical_property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thickness_of_specimen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Test_specimen_production_film"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasUnit>mm</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>sthick</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Relative_permittivity_(1_MHz)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Relative_permittivity_(1_MHz)> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf untitled-ontology-2:Electrical_property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thickness_tested -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thickness_tested">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Shore_A_hardness_(3s)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Shore_A_hardness_(3s)> rdf:type owl:Class ;
-                                                                                               rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Transfer_Molding -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Shore_D_hardness_(15s)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Shore_D_hardness_(15s)> rdf:type owl:Class ;
-                                                                                                rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Transfer_Molding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>XferMol</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Strain_at_break_(TPE)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Strain_at_break_(TPE)> rdf:type owl:Class ;
-                                                                                               rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Transparent -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Transparent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Strain_at_yield_(normal)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Strain_at_yield_(normal)> rdf:type owl:Class ;
-                                                                                                  rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Type_of_extrusion -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Strain_at_yield_(parallel)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Strain_at_yield_(parallel)> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Type_of_extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Test_specimen_production_film"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>ExtTy</materialproperties:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasUnit>-</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_break_(TPE)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_break_(TPE)> rdf:type owl:Class ;
-                                                                                               rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#U.V._stabilized_or_stable_to_weather -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#U.V._stabilized_or_stable_to_weather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Special_characteristics"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_yield_(normal)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_yield_(normal)> rdf:type owl:Class ;
-                                                                                                  rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Viscosity_number -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_yield_(parallel)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Stress_at_yield_(parallel)> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Viscosity_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>VN</materialproperties:hasShortName>
+                <materialproperties:hasUnit>cm³/g</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temp._of_deflection_under_load_(0.45_MPa)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temp._of_deflection_under_load_(0.45_MPa)> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf untitled-ontology-2:Thermal_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Volume_resistivity -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Volume_resistivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temp._of_deflection_under_load_(1.80_MPa)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temp._of_deflection_under_load_(1.80_MPa)> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf untitled-ontology-2:Thermal_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Water_absorption -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temp._of_deflection_under_load_(8.00_MPa)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temp._of_deflection_under_load_(8.00_MPa)> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf untitled-ontology-2:Thermal_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Water_absorption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Physical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Tensile_creep_modulus_(1000h)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Tensile_creep_modulus_(1000h)> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Yellow_Card_available -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Yellow_Card_available">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Tensile_creep_modulus_(1h)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Tensile_creep_modulus_(1h)> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Yield_strain -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Tensile_notched_impact_strength_(+23°C)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Tensile_notched_impact_strength_(+23°C)> rdf:type owl:Class ;
-                                                                                                                 rdfs:subClassOf untitled-ontology-2:Mechanical_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Yield_strain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>εy</materialproperties:hasShortName>
+                <materialproperties:hasUnit>%</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Trouser_Tear_resistance_(normal)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Trouser_Tear_resistance_(normal)> rdf:type owl:Class ;
-                                                                                                          rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Yield_stress -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Yield_stress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>σy</materialproperties:hasShortName>
+                <materialproperties:hasUnit>MPa</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Trouser_Tear_resistance_(parallel)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Trouser_Tear_resistance_(parallel)> rdf:type owl:Class ;
-                                                                                                            rdfs:subClassOf untitled-ontology-2:Mechanical_property_film .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_impact_strength_(+23°C) -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Vicat_softening_temperature_(50°C/h_50N)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Vicat_softening_temperature_(50°C/h_50N)> rdf:type owl:Class ;
-                                                                                                                  rdfs:subClassOf untitled-ontology-2:Thermal_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_impact_strength_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-#################################################################
-#    Individuals
-#################################################################
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_impact_strength_(-30°C) -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Gradename
-untitled-ontology-2:Gradename rdf:type owl:NamedIndividual ;
-                              rdfs:comment "" .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_impact_strength_(-30°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP
-untitled-ontology-2:PP rdf:type owl:NamedIndividual ,
-                                untitled-ontology-2:PP ;
-                       untitled-ontology-2:hasGradename "PERCOM® A4400" .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_notched_impact_strength_(+23°C) -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_notched_impact_strength_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-GF10
-untitled-ontology-2:PP-GF10 rdf:type owl:NamedIndividual ,
-                                     untitled-ontology-2:PP ;
-                            untitled-ontology-2:hasGradename "PERCOM® DCG10" .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_notched_impact_strength_(+23°C)_3mm -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-GF20
-untitled-ontology-2:PP-GF20 rdf:type owl:NamedIndividual ,
-                                     untitled-ontology-2:PP ;
-                            untitled-ontology-2:hasGradename "PERCOM® DCG20" .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_notched_impact_strength_(+23°C)_3mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-GF30
-untitled-ontology-2:PP-GF30 rdf:type owl:NamedIndividual ,
-                                     untitled-ontology-2:PP ;
-                            untitled-ontology-2:hasGradename "PERCOM® DCG30" .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_notched_impact_strength_(-30°C) -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_notched_impact_strength_(-30°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-GF40
-untitled-ontology-2:PP-GF40 rdf:type owl:NamedIndividual ,
-                                     untitled-ontology-2:PP .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_notched_impact_strength_(-30°C)_3mm -->
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#temperature
-untitled-ontology-2:temperature rdf:type owl:NamedIndividual ,
-                                         untitled-ontology-2:Rheological_Property .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Charpy_notched_impact_strength_(-30°C)_3mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-(GF+T)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-(GF+T)> rdf:type owl:NamedIndividual ,
-                                                                                            untitled-ontology-2:PP ;
-                                                                                   untitled-ontology-2:hasGradename "PERCOM® A2000GT" .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(normal) -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
 
-[ untitled-ontology-2:hasProperty untitled-ontology-2:temperature
-] .
 
-[ untitled-ontology-2:hasName ""
- ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(parallel) -->
 
-[ untitled-ontology-2:hasShortName "m" ;
-   untitled-ontology-2:hasUnit "kg"
- ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
 
-[ untitled-ontology-2:hasName ""
- ] .
 
-#################################################################
-#    Annotations
-#################################################################
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Compression_Set,_100°C,_24h -->
 
-untitled-ontology-2:PP-GF10 rdfs:comment [ untitled-ontology-2:hasFlameRetardant 0.1
-                                          ] .
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Compression_Set,_100°C,_24h">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
 
-untitled-ontology-2:PP-GF20 rdfs:comment [ untitled-ontology-2:hasGlassFiber 0.2
-                                         ] .
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Compression_Set,_23°C,_24h -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Compression_Set,_23°C,_24h">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
 
-<http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#PP-(GF+T)> rdfs:label [ ] ,
-[ untitled-ontology-2:hasGradename "PERCOM® A2000GT"
-] ,
-[ untitled-ontology-2:hasMeltvolumFlowRate "12.0"^^xsd:float
-] .
 
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Compression_Set,_70°C,_24h -->
 
-###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Compression_Set,_70°C,_24h">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dissipation_factor_(100_Hz) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dissipation_factor_(100_Hz)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dissipation_factor_(1_MHz) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Dissipation_factor_(1_MHz)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Elmendorf_Tear_resistance_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Elmendorf_Tear_resistance_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Elmendorf_Tear_resistance_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Elmendorf_Tear_resistance_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Glass_transition_temperature_(10°C/min) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Glass_transition_temperature_(10°C/min)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Indicative_density_(PE_only) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Indicative_density_(PE_only)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Physical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_impact_strength_(+23°C)_4mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_impact_strength_(+23°C)_4mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_impact_strength_(-30°C)_4mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_impact_strength_(-30°C)_4mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_notched_impact_strength_(+23°C)_3mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_notched_impact_strength_(+23°C)_3mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_notched_impact_strength_(+23°C)_4mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_notched_impact_strength_(+23°C)_4mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_notched_impact_strength_(+30°C)_3mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_notched_impact_strength_(+30°C)_3mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_notched_impact_strength_(+30°C)_4mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Izod_notched_impact_strength_(+30°C)_4mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Maximum_strain_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Maximum_strain_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Maximum_strain_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Maximum_strain_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Maximum_stress_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Maximum_stress_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Maximum_stress_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Maximum_stress_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Melting_temperature_(10°C/min) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Melting_temperature_(10°C/min)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Molding_shrinkage_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Molding_shrinkage_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>SMn</materialproperties:hasShortName>
+                <materialproperties:hasUnit>%</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Molding_shrinkage_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Molding_shrinkage_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasShortName>Smp</materialproperties:hasShortName>
+                <materialproperties:hasUnit>%</materialproperties:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-(GF+T) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-(GF+T)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Puncture_-_maximum_force_(+23°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Puncture_-_maximum_force_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Puncture_-_maximum_force_(-30°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Puncture_-_maximum_force_(-30°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Puncture_energy_(+23°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Puncture_energy_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Puncture_energy_(-30°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Puncture_energy_(-30°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Relative_permittivity_(100_Hz) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Relative_permittivity_(100_Hz)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Relative_permittivity_(1_MHz) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Relative_permittivity_(1_MHz)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Shore_A_hardness_(3s) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Shore_A_hardness_(3s)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Shore_D_hardness_(15s) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Shore_D_hardness_(15s)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Strain_at_break_(TPE) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Strain_at_break_(TPE)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Strain_at_yield_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Strain_at_yield_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Strain_at_yield_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Strain_at_yield_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_break_(TPE) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_break_(TPE)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_yield_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_yield_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_yield_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Stress_at_yield_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temp._of_deflection_under_load_(0.45_MPa) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temp._of_deflection_under_load_(0.45_MPa)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temp._of_deflection_under_load_(1.80_MPa) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temp._of_deflection_under_load_(1.80_MPa)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temp._of_deflection_under_load_(8.00_MPa) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Temp._of_deflection_under_load_(8.00_MPa)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tensile_creep_modulus_(1000h) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tensile_creep_modulus_(1000h)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tensile_creep_modulus_(1h) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tensile_creep_modulus_(1h)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tensile_notched_impact_strength_(+23°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Tensile_notched_impact_strength_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Trouser_Tear_resistance_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Trouser_Tear_resistance_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Trouser_Tear_resistance_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Trouser_Tear_resistance_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Vicat_softening_temperature_(50°C/h_50N) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Vicat_softening_temperature_(50°C/h_50N)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Gradename -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Gradename">
+        <rdfs:comment></rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+        <materialproperties:hasGradename>PERCOM® A4400</materialproperties:hasGradename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+        <materialproperties:hasGradename>PERCOM® DCG10</materialproperties:hasGradename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+        <materialproperties:hasGradename>PERCOM® DCG20</materialproperties:hasGradename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+        <materialproperties:hasGradename>PERCOM® DCG30</materialproperties:hasGradename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF40">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#temperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Rheological_Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-(GF+T) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-(GF+T)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP"/>
+        <materialproperties:hasGradename>PERCOM® A2000GT</materialproperties:hasGradename>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <materialproperties:hasProperty rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#temperature"/>
+    </rdf:Description>
+    <rdf:Description>
+        <materialproperties:hasName></materialproperties:hasName>
+    </rdf:Description>
+    <rdf:Description>
+        <materialproperties:hasShortName>m</materialproperties:hasShortName>
+        <materialproperties:hasUnit>kg</materialproperties:hasUnit>
+    </rdf:Description>
+    <rdf:Description>
+        <materialproperties:hasName></materialproperties:hasName>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF10">
+        <rdfs:comment>
+            <rdf:Description>
+                <materialproperties:hasFlameRetardant rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</materialproperties:hasFlameRetardant>
+            </rdf:Description>
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-GF20">
+        <rdfs:comment>
+            <rdf:Description>
+                <materialproperties:hasGlassFiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</materialproperties:hasGlassFiber>
+            </rdf:Description>
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-(GF+T)">
+        <rdfs:label>
+            <rdf:Description/>
+        </rdfs:label>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasGradename>PERCOM® A2000GT</materialproperties:hasGradename>
+            </rdf:Description>
+        </rdfs:label>
+        <rdfs:label>
+            <rdf:Description>
+                <materialproperties:hasMeltvolumFlowRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</materialproperties:hasMeltvolumFlowRate>
+            </rdf:Description>
+        </rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
