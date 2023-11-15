@@ -118,7 +118,7 @@ rdfs:label rdfs:comment "cm3/10min" .
                       <http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Molding_shrinkage_(normal)> ,
                       <http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#Molding_shrinkage_(parallel)> ;
           rdfs:range xsd:float ;
-          rdfs:comment ""^^xsd:float .
+          rdfs:comment "10.0"^^xsd:float .
 
 
 ###  http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#hasViscosityNumber
