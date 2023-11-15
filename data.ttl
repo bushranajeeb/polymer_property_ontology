@@ -1,0 +1,1682 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties">
+    <Prefix name="" IRI="http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-2" IRI="http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#"/>
+    <Declaration>
+        <Class IRI="#Abrasion_resistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Additives"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anti-static"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antiblocking_agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blow_Molding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blowing_agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burning_Behav._at_1.5mm_nom._thickn."/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burning_Behav._at_thickness_h"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calandering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comparative_tracking_index"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dart_drop_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dart_drop_B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delivery_form"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Density"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dynamic_coefficient_of_friction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electric_strength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical_property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film_Extrusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Granul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heat_stabilized_or_stable_to_heat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Humidity_absorption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Increased_electrical_conductivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Injection_Molding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Light_stabilized_or_stable_to_light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Load"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lubricants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Luminous_transmittance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_Properties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanical_Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanical_property_film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Melt_volume_flow_rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metal_deactivator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minimum_achievable_thickness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nominal_strain_at_break"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_Extrusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oxygen_index"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PP-GF10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PP-GF20"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pellets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plasticizer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Platable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polymer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profile_Extrusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Release_agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rheological_Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sheet_Extrusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Special_characteristics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strain_at_break"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_at_100percent_elongation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_at_10percent_elongation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_at_300percent_elongation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_at_50_percent_strain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_at_break"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surface_resistivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tear_strength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tensile_modulus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_specimen_production_film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermal_Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermoforming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thickness_of_specimen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thickness_tested"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transfer_Molding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transparent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type_of_extrusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#U.V._stabilized_or_stable_to_weather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Viscosity_number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volume_resistivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water_absorption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yellow_Card_available"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yield_strain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yield_stress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charpy_impact_strength_(+23°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charpy_impact_strength_(-30°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charpy_notched_impact_strength_(+23°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charpy_notched_impact_strength_(+23°C)_3mm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charpy_notched_impact_strength_(-30°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charpy_notched_impact_strength_(-30°C)_3mm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(normal)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(parallel)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compression_Set,_100°C,_24h"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compression_Set,_23°C,_24h"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compression_Set,_70°C,_24h"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dissipation_factor_(100_Hz)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dissipation_factor_(1_MHz)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elmendorf_Tear_resistance_(normal)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elmendorf_Tear_resistance_(parallel)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glass_transition_temperature_(10°C/min)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicative_density_(PE_only)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Izod_impact_strength_(+23°C)_4mm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Izod_impact_strength_(-30°C)_4mm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Izod_notched_impact_strength_(+23°C)_3mm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Izod_notched_impact_strength_(+23°C)_4mm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Izod_notched_impact_strength_(+30°C)_3mm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Izod_notched_impact_strength_(+30°C)_4mm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maximum_strain_(normal)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maximum_strain_(parallel)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maximum_stress_(normal)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maximum_stress_(parallel)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Melting_temperature_(10°C/min)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Molding_shrinkage_(normal)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Molding_shrinkage_(parallel)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PP-(GF+T)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Puncture_-_maximum_force_(+23°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Puncture_-_maximum_force_(-30°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Puncture_energy_(+23°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Puncture_energy_(-30°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relative_permittivity_(100_Hz)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relative_permittivity_(1_MHz)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shore_A_hardness_(3s)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shore_D_hardness_(15s)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strain_at_break_(TPE)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strain_at_yield_(normal)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strain_at_yield_(parallel)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_at_break_(TPE)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_at_yield_(normal)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_at_yield_(parallel)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temp._of_deflection_under_load_(0.45_MPa)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temp._of_deflection_under_load_(1.80_MPa)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temp._of_deflection_under_load_(8.00_MPa)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tensile_creep_modulus_(1000h)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tensile_creep_modulus_(1h)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tensile_notched_impact_strength_(+23°C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trouser_Tear_resistance_(normal)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trouser_Tear_resistance_(parallel)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vicat_softening_temperature_(50°C/h_50N)"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFlameRetardant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGlassFiber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGradename"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMeltvolumFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPropertyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasShortName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUnitValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasViscosityNumber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gradename"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PP-GF10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PP-GF20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PP-GF30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PP-GF40"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PP-(GF+T)"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Abrasion_resistance"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Additives"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anti-static"/>
+        <Class IRI="#Special_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antiblocking_agent"/>
+        <Class IRI="#Additives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blow_Molding"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blowing_agent"/>
+        <Class IRI="#Additives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burning_Behav._at_1.5mm_nom._thickn."/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burning_Behav._at_thickness_h"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Calandering"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Casting"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coating"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comparative_tracking_index"/>
+        <Class IRI="#Electrical_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dart_drop_A"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dart_drop_B"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delivery_form"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Density"/>
+        <Class IRI="#Physical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dynamic_coefficient_of_friction"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electric_strength"/>
+        <Class IRI="#Electrical_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_property"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film_Extrusion"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Granul"/>
+        <Class IRI="#Delivery_form"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heat_stabilized_or_stable_to_heat"/>
+        <Class IRI="#Special_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humidity_absorption"/>
+        <Class IRI="#Physical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Increased_electrical_conductivity"/>
+        <Class IRI="#Special_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injection_Molding"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Light_stabilized_or_stable_to_light"/>
+        <Class IRI="#Special_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Load"/>
+        <Class IRI="#Rheological_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lubricants"/>
+        <Class IRI="#Additives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Luminous_transmittance"/>
+        <Class IRI="#Physical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mechanical_Property"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mechanical_property_film"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melt_volume_flow_rate"/>
+        <Class IRI="#Rheological_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metal_deactivator"/>
+        <Class IRI="#Additives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minimum_achievable_thickness"/>
+        <Class IRI="#Test_specimen_production_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nominal_strain_at_break"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other_Extrusion"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oxygen_index"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PP"/>
+        <Class IRI="#Polymer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PP-GF10"/>
+        <Class IRI="#PP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PP-GF20"/>
+        <Class IRI="#PP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pellets"/>
+        <Class IRI="#Delivery_form"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Property"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plasticizer"/>
+        <Class IRI="#Additives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Platable"/>
+        <Class IRI="#Special_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powder"/>
+        <Class IRI="#Delivery_form"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Processing"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profile_Extrusion"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Release_agent"/>
+        <Class IRI="#Additives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rheological_Property"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sheet_Extrusion"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Special_characteristics"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strain_at_break"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_at_100percent_elongation"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_at_10percent_elongation"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_at_300percent_elongation"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_at_50_percent_strain"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_at_break"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surface_resistivity"/>
+        <Class IRI="#Electrical_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tear_strength"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temperature"/>
+        <Class IRI="#Rheological_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tensile_modulus"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_specimen_production_film"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermal_Property"/>
+        <Class IRI="#Material_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermoforming"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thickness_of_specimen"/>
+        <Class IRI="#Test_specimen_production_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thickness_tested"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transfer_Molding"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transparent"/>
+        <Class IRI="#Special_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type_of_extrusion"/>
+        <Class IRI="#Test_specimen_production_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#U.V._stabilized_or_stable_to_weather"/>
+        <Class IRI="#Special_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Viscosity_number"/>
+        <Class IRI="#Rheological_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volume_resistivity"/>
+        <Class IRI="#Electrical_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_absorption"/>
+        <Class IRI="#Physical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yellow_Card_available"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yield_strain"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yield_stress"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charpy_impact_strength_(+23°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charpy_impact_strength_(-30°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charpy_notched_impact_strength_(+23°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charpy_notched_impact_strength_(+23°C)_3mm"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charpy_notched_impact_strength_(-30°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charpy_notched_impact_strength_(-30°C)_3mm"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(normal)"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(parallel)"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compression_Set,_100°C,_24h"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compression_Set,_23°C,_24h"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compression_Set,_70°C,_24h"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dissipation_factor_(100_Hz)"/>
+        <Class IRI="#Electrical_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dissipation_factor_(1_MHz)"/>
+        <Class IRI="#Electrical_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elmendorf_Tear_resistance_(normal)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elmendorf_Tear_resistance_(parallel)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glass_transition_temperature_(10°C/min)"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicative_density_(PE_only)"/>
+        <Class IRI="#Physical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Izod_impact_strength_(+23°C)_4mm"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Izod_impact_strength_(-30°C)_4mm"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Izod_notched_impact_strength_(+23°C)_3mm"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Izod_notched_impact_strength_(+23°C)_4mm"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Izod_notched_impact_strength_(+30°C)_3mm"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Izod_notched_impact_strength_(+30°C)_4mm"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maximum_strain_(normal)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maximum_strain_(parallel)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maximum_stress_(normal)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maximum_stress_(parallel)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melting_temperature_(10°C/min)"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Molding_shrinkage_(normal)"/>
+        <Class IRI="#Rheological_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Molding_shrinkage_(parallel)"/>
+        <Class IRI="#Rheological_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PP-(GF+T)"/>
+        <Class IRI="#PP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Puncture_-_maximum_force_(+23°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Puncture_-_maximum_force_(-30°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Puncture_energy_(+23°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Puncture_energy_(-30°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relative_permittivity_(100_Hz)"/>
+        <Class IRI="#Electrical_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relative_permittivity_(1_MHz)"/>
+        <Class IRI="#Electrical_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shore_A_hardness_(3s)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shore_D_hardness_(15s)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strain_at_break_(TPE)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strain_at_yield_(normal)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strain_at_yield_(parallel)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_at_break_(TPE)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_at_yield_(normal)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_at_yield_(parallel)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temp._of_deflection_under_load_(0.45_MPa)"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temp._of_deflection_under_load_(1.80_MPa)"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temp._of_deflection_under_load_(8.00_MPa)"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tensile_creep_modulus_(1000h)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tensile_creep_modulus_(1h)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tensile_notched_impact_strength_(+23°C)"/>
+        <Class IRI="#Mechanical_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trouser_Tear_resistance_(normal)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trouser_Tear_resistance_(parallel)"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vicat_softening_temperature_(50°C/h_50N)"/>
+        <Class IRI="#Thermal_Property"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#PP"/>
+        <NamedIndividual IRI="#PP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PP"/>
+        <NamedIndividual IRI="#PP-GF10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PP"/>
+        <NamedIndividual IRI="#PP-GF20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PP"/>
+        <NamedIndividual IRI="#PP-GF30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PP"/>
+        <NamedIndividual IRI="#PP-GF40"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rheological_Property"/>
+        <NamedIndividual IRI="#temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PP"/>
+        <NamedIndividual IRI="#PP-(GF+T)"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProperty"/>
+        <AnonymousIndividual nodeID="_:genid2147483699"/>
+        <NamedIndividual IRI="#temperature"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGradename"/>
+        <NamedIndividual IRI="#PP"/>
+        <Literal>PERCOM® A4400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGradename"/>
+        <NamedIndividual IRI="#PP-GF10"/>
+        <Literal>PERCOM® DCG10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGradename"/>
+        <NamedIndividual IRI="#PP-GF20"/>
+        <Literal>PERCOM® DCG20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGradename"/>
+        <NamedIndividual IRI="#PP-GF30"/>
+        <Literal>PERCOM® DCG30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGradename"/>
+        <NamedIndividual IRI="#PP-(GF+T)"/>
+        <Literal>PERCOM® A2000GT</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFlameRetardant"/>
+        <AnonymousIndividual nodeID="_:genid-8aded04d-350d-4154-a83e-913231215daa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGlassFiber"/>
+        <AnonymousIndividual nodeID="_:genid-f47a4be8-ed36-4695-b64c-aa9923d6d5a3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483688"/>
+        <Literal>m</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483688"/>
+        <Literal>kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+        <Literal>MVR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+        <Literal>cm3/10min</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483690"/>
+        <Literal>InjMold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+        <Literal>εy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+        <Literal>%</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483692"/>
+        <Literal>VN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483692"/>
+        <Literal>cm³/g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483693"/>
+        <Literal>σy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483693"/>
+        <Literal>MPa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483694"/>
+        <Literal>XferMol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483695"/>
+        <Literal>δB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483695"/>
+        <Literal>MPa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483696"/>
+        <Literal>MinThick</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483697"/>
+        <Literal>SheetEx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483698"/>
+        <Literal>Et</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483698"/>
+        <Literal>MPa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483700"/>
+        <Literal>Film</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483701"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483702"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483703"/>
+        <Literal>Thermo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483704"/>
+        <Literal>mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483705"/>
+        <Literal>sthick</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483706"/>
+        <Literal>Powder</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGradename"/>
+        <AnonymousIndividual nodeID="_:genid2147483708"/>
+        <Literal>PERCOM® A2000GT</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeltvolumFlowRate"/>
+        <AnonymousIndividual nodeID="_:genid2147483709"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483710"/>
+        <Literal>Pellets</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483711"/>
+        <Literal>tB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483711"/>
+        <Literal>%</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483712"/>
+        <Literal>δ50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483712"/>
+        <Literal>%</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483713"/>
+        <Literal>T</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483713"/>
+        <Literal>°C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483714"/>
+        <Literal>OtherEx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483715"/>
+        <Literal>Granul</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483716"/>
+        <Literal>InjMold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483716"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483717"/>
+        <Literal>Casting</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483718"/>
+        <Literal>Calandr</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483719"/>
+        <Literal>Smp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483719"/>
+        <Literal>%</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFlameRetardant"/>
+        <AnonymousIndividual nodeID="_:genid2147483720"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGlassFiber"/>
+        <AnonymousIndividual nodeID="_:genid2147483720"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <AnonymousIndividual nodeID="_:genid2147483720"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483721"/>
+        <Literal>SMn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483721"/>
+        <Literal>%</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483722"/>
+        <Literal>ProfEx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483723"/>
+        <Literal>ExtTy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483724"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <AnonymousIndividual nodeID="_:genid2147483725"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShortName"/>
+        <AnonymousIndividual nodeID="_:genid2147483726"/>
+        <Literal>m</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUnit"/>
+        <AnonymousIndividual nodeID="_:genid2147483726"/>
+        <Literal>kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <AnonymousIndividual nodeID="_:genid2147483727"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#PP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#PP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#Polymer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Material_Properties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#PP-GF10"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#PP-GF20"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#PP-(GF+T)"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#Material_Properties"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Additives"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Delivery_form"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Electrical_property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Mechanical_Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Mechanical_property_film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Physical_Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Processing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Rheological_Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Special_characteristics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Thermal_Property"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGradename"/>
+        <Class IRI="#PP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Polymer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Load"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Temperature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Viscosity_number"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Molding_shrinkage_(normal)"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Molding_shrinkage_(parallel)"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFlameRetardant"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGlassFiber"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Blow_Molding</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483716"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Calandering</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483718"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Casting</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483717"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Film_Extrusion</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483700"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gradename</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Granul</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483715"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Injection_Molding</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483690"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Load</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483688"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Material_Properties</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483701"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Material_Properties</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483702"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Melt_volume_flow_rate</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Minimum_achievable_thickness</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483696"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nominal_strain_at_break</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483711"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Other_Extrusion</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483714"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PP-GF10</IRI>
+        <AnonymousIndividual nodeID="_:genid-8aded04d-350d-4154-a83e-913231215daa"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PP-GF20</IRI>
+        <AnonymousIndividual nodeID="_:genid-f47a4be8-ed36-4695-b64c-aa9923d6d5a3"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pellets</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483710"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Polymer</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483720"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Powder</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483706"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Profile_Extrusion</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483722"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sheet_Extrusion</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483697"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stress_at_50_percent_strain</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483712"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stress_at_break</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483695"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Temperature</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483713"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tensile_modulus</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483698"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Thermoforming</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483703"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Thickness_of_specimen</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483704"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Thickness_of_specimen</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483705"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transfer_Molding</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483694"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Type_of_extrusion</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483723"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Type_of_extrusion</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483724"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Viscosity_number</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483692"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Yield_strain</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Yield_stress</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483693"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasName</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPropertyName</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasValue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Molding_shrinkage_(normal)</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483721"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Molding_shrinkage_(parallel)</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483719"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PP-(GF+T)</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483707"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PP-(GF+T)</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483708"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PP-(GF+T)</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483709"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
+        <Literal>cm3/10min</Literal>
+    </AnnotationAssertion>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>untitled-ontology-2:Temperature</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
