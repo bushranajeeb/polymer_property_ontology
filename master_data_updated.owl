@@ -1,0 +1,1555 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data/"
+     xml:base="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:master_data="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/untitled-ontology-2#Temperature"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:comment>cm3/10min</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasAdditives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasAdditives">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Polymer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF10"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF20"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-(GF+T)"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF10"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF20"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Polymer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-(GF+T)"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Comparative_tracking_index"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electric_strength"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Granul"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Load"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Pellets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Powder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Surface_resistivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temperature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Viscosity_number"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Volume_resistivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dissipation_factor_(100_Hz)"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dissipation_factor_(1_MHz)"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Molding_shrinkage_(normal)"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Molding_shrinkage_(parallel)"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Relative_permittivity_(100_Hz)"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Relative_permittivity_(1_MHz)"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Delivery_form"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Physical_Property"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasComponent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasFlameRetardant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasFlameRetardant">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasGlassFiber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasGlassFiber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasGradename -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasGradename">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasMeltvolumFlowRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasMeltvolumFlowRate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasPropertyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasPropertyName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasShortName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasShortName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasTemperature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasUnitValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasUnitValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasViscosityNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#hasViscosityNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Polymer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#ABS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#ABS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Polymer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Abrasion_resistance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Abrasion_resistance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Anti-static -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Anti-static">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Antiblocking_agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Antiblocking_agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Blow_Molding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Blow_Molding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>InjMold</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Blowing_agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Blowing_agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Burning_Behav._at_1.5mm_nom._thickn. -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Burning_Behav._at_1.5mm_nom._thickn.">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Burning_Behav._at_thickness_h -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Burning_Behav._at_thickness_h">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Calandering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Calandering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Calandr</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Casting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Casting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Casting</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Coating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Coating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Comparative_tracking_index -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Comparative_tracking_index">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dart_drop_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dart_drop_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dart_drop_B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dart_drop_B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Delivery_form -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Delivery_form">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Density -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Density">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Physical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dynamic_coefficient_of_friction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dynamic_coefficient_of_friction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electric_strength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electric_strength">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Film_Extrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Film_Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Film</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Granul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Granul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Delivery_form"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Granul</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Heat_stabilized_or_stable_to_heat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Heat_stabilized_or_stable_to_heat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Humidity_absorption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Humidity_absorption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Physical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Increased_electrical_conductivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Increased_electrical_conductivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Injection_Molding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Injection_Molding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>InjMold</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Light_stabilized_or_stable_to_light -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Light_stabilized_or_stable_to_light">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Load -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Load">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>m</master_data:hasShortName>
+                <master_data:hasUnit>kg</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Lubricants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Lubricants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Luminous_transmittance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Luminous_transmittance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Physical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Melt_volume_flow_rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Melt_volume_flow_rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>MVR</master_data:hasShortName>
+                <master_data:hasUnit>cm3/10min</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Metal_deactivator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Metal_deactivator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Minimum_achievable_thickness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Minimum_achievable_thickness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Test_specimen_production_film"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>MinThick</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Nominal_strain_at_break -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Nominal_strain_at_break">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>tB</master_data:hasShortName>
+                <master_data:hasUnit>%</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Other_Extrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Other_Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>OtherEx</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Oxygen_index -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Oxygen_index">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Polymer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF20 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF20">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Pellets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Pellets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Delivery_form"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Pellets</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Physical_Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Physical_Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Plasticizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Plasticizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Platable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Platable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Polymer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Polymer">
+        <rdfs:comment>
+            <rdf:Description>
+                <master_data:hasFlameRetardant rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></master_data:hasFlameRetardant>
+                <master_data:hasGlassFiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></master_data:hasGlassFiber>
+            </rdf:Description>
+        </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Powder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Powder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Delivery_form"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Powder</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Profile_Extrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Profile_Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>ProfEx</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Release_agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Release_agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Additives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Sheet_Extrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Sheet_Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>SheetEx</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Strain_at_break -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Strain_at_break">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_100percent_elongation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_100percent_elongation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_10percent_elongation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_10percent_elongation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_300percent_elongation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_300percent_elongation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_50_percent_strain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_50_percent_strain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>δ50</master_data:hasShortName>
+                <master_data:hasUnit>%</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_break -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_break">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>δB</master_data:hasShortName>
+                <master_data:hasUnit>MPa</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Surface_resistivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Surface_resistivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tear_strength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tear_strength">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>T</master_data:hasShortName>
+                <master_data:hasUnit>°C</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tensile_modulus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tensile_modulus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Et</master_data:hasShortName>
+                <master_data:hasUnit>MPa</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Test_specimen_production_film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Test_specimen_production_film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Material_Properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermoforming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermoforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Thermo</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thickness_of_specimen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thickness_of_specimen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Test_specimen_production_film"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasUnit>mm</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>sthick</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thickness_tested -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thickness_tested">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Transfer_Molding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Transfer_Molding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Processing"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>XferMol</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Transparent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Transparent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Type_of_extrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Type_of_extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Test_specimen_production_film"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasUnit>-</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>ExtTy</master_data:hasShortName>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#U.V._stabilized_or_stable_to_weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#U.V._stabilized_or_stable_to_weather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Special_characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Viscosity_number -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Viscosity_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>VN</master_data:hasShortName>
+                <master_data:hasUnit>cm³/g</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Volume_resistivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Volume_resistivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Water_absorption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Water_absorption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Physical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Yellow_Card_available -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Yellow_Card_available">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Yield_strain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Yield_strain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>εy</master_data:hasShortName>
+                <master_data:hasUnit>%</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Yield_stress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Yield_stress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>σy</master_data:hasShortName>
+                <master_data:hasUnit>MPa</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_impact_strength_(+23°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_impact_strength_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_impact_strength_(-30°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_impact_strength_(-30°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_notched_impact_strength_(+23°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_notched_impact_strength_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_notched_impact_strength_(+23°C)_3mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_notched_impact_strength_(+23°C)_3mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_notched_impact_strength_(-30°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_notched_impact_strength_(-30°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_notched_impact_strength_(-30°C)_3mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Charpy_notched_impact_strength_(-30°C)_3mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Coeff.of_linear_therm._Expansion_23°C_to_55°C_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Compression_Set,_100°C,_24h -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Compression_Set,_100°C,_24h">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Compression_Set,_23°C,_24h -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Compression_Set,_23°C,_24h">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Compression_Set,_70°C,_24h -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Compression_Set,_70°C,_24h">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dissipation_factor_(100_Hz) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dissipation_factor_(100_Hz)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dissipation_factor_(1_MHz) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Dissipation_factor_(1_MHz)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Elmendorf_Tear_resistance_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Elmendorf_Tear_resistance_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Elmendorf_Tear_resistance_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Elmendorf_Tear_resistance_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Glass_transition_temperature_(10°C/min) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Glass_transition_temperature_(10°C/min)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Indicative_density_(PE_only) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Indicative_density_(PE_only)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Physical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_impact_strength_(+23°C)_4mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_impact_strength_(+23°C)_4mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_impact_strength_(-30°C)_4mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_impact_strength_(-30°C)_4mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_notched_impact_strength_(+23°C)_3mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_notched_impact_strength_(+23°C)_3mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_notched_impact_strength_(+23°C)_4mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_notched_impact_strength_(+23°C)_4mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_notched_impact_strength_(+30°C)_3mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_notched_impact_strength_(+30°C)_3mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_notched_impact_strength_(+30°C)_4mm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Izod_notched_impact_strength_(+30°C)_4mm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Maximum_strain_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Maximum_strain_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Maximum_strain_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Maximum_strain_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Maximum_stress_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Maximum_stress_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Maximum_stress_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Maximum_stress_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Melting_temperature_(10°C/min) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Melting_temperature_(10°C/min)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Molding_shrinkage_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Molding_shrinkage_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>SMn</master_data:hasShortName>
+                <master_data:hasUnit>%</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Molding_shrinkage_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Molding_shrinkage_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Rheological_Property"/>
+        <rdfs:label>
+            <rdf:Description>
+                <master_data:hasShortName>Smp</master_data:hasShortName>
+                <master_data:hasUnit>%</master_data:hasUnit>
+            </rdf:Description>
+        </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-(GF+T) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-(GF+T)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Puncture_-_maximum_force_(+23°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Puncture_-_maximum_force_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Puncture_-_maximum_force_(-30°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Puncture_-_maximum_force_(-30°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Puncture_energy_(+23°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Puncture_energy_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Puncture_energy_(-30°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Puncture_energy_(-30°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Relative_permittivity_(100_Hz) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Relative_permittivity_(100_Hz)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Relative_permittivity_(1_MHz) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Relative_permittivity_(1_MHz)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Electrical_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Shore_A_hardness_(3s) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Shore_A_hardness_(3s)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Shore_D_hardness_(15s) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Shore_D_hardness_(15s)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Strain_at_break_(TPE) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Strain_at_break_(TPE)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Strain_at_yield_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Strain_at_yield_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Strain_at_yield_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Strain_at_yield_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_break_(TPE) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_break_(TPE)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_yield_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_yield_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_yield_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Stress_at_yield_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temp._of_deflection_under_load_(0.45_MPa) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temp._of_deflection_under_load_(0.45_MPa)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temp._of_deflection_under_load_(1.80_MPa) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temp._of_deflection_under_load_(1.80_MPa)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temp._of_deflection_under_load_(8.00_MPa) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Temp._of_deflection_under_load_(8.00_MPa)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tensile_creep_modulus_(1000h) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tensile_creep_modulus_(1000h)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tensile_creep_modulus_(1h) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tensile_creep_modulus_(1h)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tensile_notched_impact_strength_(+23°C) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Tensile_notched_impact_strength_(+23°C)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Trouser_Tear_resistance_(normal) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Trouser_Tear_resistance_(normal)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Trouser_Tear_resistance_(parallel) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Trouser_Tear_resistance_(parallel)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Mechanical_property_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Vicat_softening_temperature_(50°C/h_50N) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Vicat_softening_temperature_(50°C/h_50N)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Thermal_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Gradename -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Gradename"/>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+        <master_data:hasGradename>PERCOM® A4400</master_data:hasGradename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+        <master_data:hasGradename>PERCOM® DCG10</master_data:hasGradename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+        <master_data:hasGradename>PERCOM® DCG20</master_data:hasGradename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+        <master_data:hasGradename>PERCOM® DCG30</master_data:hasGradename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF40">
+        <rdf:type rdf:resource="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <master_data:hasShortName></master_data:hasShortName>
+    </rdf:Description>
+    <rdf:Description>
+        <master_data:hasMeltvolumFlowRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</master_data:hasMeltvolumFlowRate>
+    </rdf:Description>
+    <rdf:Description>
+        <master_data:hasGradename>PERCOM® A2000GT</master_data:hasGradename>
+    </rdf:Description>
+    <rdf:Description>
+        <master_data:hasName></master_data:hasName>
+    </rdf:Description>
+    <rdf:Description>
+        <master_data:hasName></master_data:hasName>
+    </rdf:Description>
+    <rdf:Description>
+        <master_data:hasShortName>m</master_data:hasShortName>
+        <master_data:hasUnit>kg</master_data:hasUnit>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF10">
+        <rdfs:comment>
+            <rdf:Description>
+                <master_data:hasFlameRetardant rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</master_data:hasFlameRetardant>
+            </rdf:Description>
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#PP-GF20">
+        <rdfs:comment>
+            <rdf:Description>
+                <master_data:hasGlassFiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</master_data:hasGlassFiber>
+            </rdf:Description>
+        </rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
