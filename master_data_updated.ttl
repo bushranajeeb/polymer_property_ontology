@@ -396,8 +396,8 @@ rdfs:label rdfs:comment "cm3/10min" .
 
 ###  http://www.semanticweb.org/syeda/ontologies/2023/9/master_data#Polymer
 :Polymer rdf:type owl:Class ;
-         rdfs:comment [ :hasFlameRetardant  ;
-                        :hasGlassFiber 
+         rdfs:comment [ :hasFlameRetardant 20 ;
+                        :hasGlassFiber 10
                       ] .
 
 
