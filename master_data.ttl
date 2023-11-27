@@ -998,34 +998,6 @@ materialproperties:PP-GF40 rdf:type owl:NamedIndividual ,
                                     materialproperties:PP .
 
 
-###  http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-(GF+T)
-<http://www.semanticweb.org/syeda/ontologies/2023/9/materialproperties#PP-(GF+T)> rdf:type owl:NamedIndividual ,
-                                                                                           materialproperties:PP ;
-                                                                                  materialproperties:hasGradename "PERCOM® A2000GT" .
-
-
-[ materialproperties:hasShortName ""
-] .
-
-[ materialproperties:hasValue ""
- ] .
-
-[ materialproperties:hasUnit "kJ/m²"
- ] .
-
-[ materialproperties:hasShortName "m" ;
-   materialproperties:hasUnit "kg"
- ] .
-
-[ materialproperties:hasName ""
- ] .
-
-[ materialproperties:hasName ""
- ] .
-
-[ materialproperties:hasUnit "kJ/m²"
- ] .
-
 #################################################################
 #    Annotations
 #################################################################
